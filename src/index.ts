@@ -1,9 +1,6 @@
 import * as fs from "fs";
 import simpleGit, { ResetMode } from "simple-git";
-import { env, loadEnv } from "./utils/env";
 import path from "path";
-
-loadEnv();
 
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json"), "utf8"));
 const gitUrl = config.url;
