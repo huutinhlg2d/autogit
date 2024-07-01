@@ -5,8 +5,9 @@ import path from "path";
 
 loadEnv();
 
-const gitUrl = env.REPO_URL;
-const modsDirectory = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json"), "utf8")).path;
+const config = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json"), "utf8"));
+const gitUrl = config.url;
+const modsDirectory = config.path;
 
 // Function to check if a directory is a Git repository
 const isGitRepo = async (folder: string): Promise<boolean> => {

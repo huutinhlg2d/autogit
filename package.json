@@ -11,14 +11,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "lodash": "^4.17.21",
-    "moment": "^2.29.4",
     "prettier": "^2.8.8",
-    "react": "^18.2.0",
-    "redux-logger": "^3.0.6",
-    "simple-git": "^3.25.0",
-    "ts-dotenv": "^0.9.1"
+    "simple-git": "^3.25.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.4",
