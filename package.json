@@ -1,0 +1,56 @@
+{
+  "name": "update-mods",
+  "private": false,
+  "version": "0.0.0",
+  "keywords": [
+    "typescript"
+  ],
+  "author": "huutinhlg2d",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "redux-logger": "^3.0.6",
+    "simple-git": "^3.25.0",
+    "ts-dotenv": "^0.9.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.4",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.14",
+    "@types/redux-logger": "^3.0.10",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.3"
+  },
+  "engines": {
+    "npm": ">=9.0.0 <10.0.0",
+    "node": ">=19.0.0 <20.0.0"
+  },
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "assets": "dist/**/*",
+    "targets": [
+      "node12"
+    ]
+  }
+}
